@@ -1,0 +1,263 @@
+body {
+    background-color: #DFE2DD;
+    margin: 0;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.WebContainer {
+    width: 100%;
+    min-width: 1000px;
+    height: auto;
+}
+
+nav.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 100%;
+    padding: 5px 5px;
+    opacity: 90%;
+    background-color: #EFF1ED;
+    font-family: 'Abril Fatface', serif;
+    z-index: 10;
+}
+
+nav.menu a {
+    display: inline-block;
+    position: relative;
+    flex: 1;
+    height: 100%;
+    padding: 15px 10px;
+    color: #3D372A;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav.menu a:hover {
+    color: #292928;
+    text-decoration: underline #292928;
+}
+
+nav.menu a:not(:last-child):after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 75%;
+    transform: translateY(18%);
+    border-right: 1.75px solid #3D372A;
+}
+
+.container, .container2 {
+    text-align: center;
+    padding: 5% 0;
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    clear: both;
+}
+
+.background-image {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+    z-index: -1;
+    margin-top: 100px;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 30px;
+    color: #3D372A;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    clear: both;
+}
+
+.card {
+    background-color: #EFF1ED;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 240px;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: 'Lora', serif;
+    color: #3D372A;
+    margin: 0 auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.hairdresser-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    cursor: pointer; 
+}
+
+.hairdresser-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    background-color: #dfe2dd;
+}
+
+.card img {
+    max-width: 70%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.card-name {
+    font-size: 1.2em;
+    color: #3D372A;
+    font-family: 'Lora', serif;
+    margin-top: 10px;
+}
+
+.contact-card {
+    background-color: #EFF1ED;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 3000px;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: 'Lora';
+    color: #3D372A;
+    margin: 0 auto;
+    clear: both;
+}
+
+h2 {
+    font-size: 1.5em; 
+    margin-bottom: 30px;
+    color: #3D372A;
+    font-family: 'Lora';
+}
+
+h3 {
+    font-size: 1em;
+    margin-bottom: 30px;
+    color: #3D372A;
+    font-family: 'Lora';
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.form-group {
+    flex: 1;
+    min-width: 200px;
+}
+
+.contact-card label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-card input[type="text"],
+.contact-card input[type="email"],
+.contact-card input[type="tel"],
+.contact-card textarea,
+.contact-card input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact-card button[type="submit"] {
+    background-color: #3D372A;
+    color: #FFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-card button[type="submit"]:hover {
+    background-color: #292928;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    opacity: 90%;
+    background-color: #F3F5F5;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Lora', sans-serif;
+    color: #3D372A;
+}
+
+@media (max-width: 1000px) {
+    .WebContainer {
+        min-width: auto;
+    }
+
+    nav.menu a {
+        width: auto;
+        flex-grow: 1;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .card-container {
+        flex-direction: column;
+    }
+
+    .card, .contact-card {
+        width: 100%;
+        max-width: none;
+    }
+
+    nav.menu a {
+        font-size: 0.8em;
+    }
+}

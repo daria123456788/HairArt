@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hair Art - Nasi fryzjerzy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cinzel:wght@400..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style fryzjerzy.css">
+</head>
+<body>
+    <nav class="menu">
+        <a href="index.html">O NAS</a>
+        <a href="nasi fryzjerzy.html">NASI FRYZJERZY</a>
+        <a href="oferta.html">OFERTA</a>
+        <a href="produkty.html">PRODUKTY</a>
+        <a href="kontakt.html">KONTAKT</a>
+    </nav>  
+    <div class="container">
+        <img src="background2.png" class="background-image" alt="Tło">
+        <div class="content">
+            <h1>NASI FRYZJERZY</h1>
+            <div class="card-container">
+                <a href="faustyna.html" class="card hairdresser-card"> 
+                    <img src="faustyna.jpg" alt="Faustyna">
+                    <div class="card-name">Faustyna</div>
+                </a>
+                <a href="alicja.html" class="card hairdresser-card"> 
+                    <img src="alicja.jpeg" alt="Alicja">
+                    <div class="card-name">Alicja</div>
+                </a>
+                <a href="agata.html" class="card hairdresser-card"> 
+                    <img src="agata.jpeg" alt="Agata">
+                    <div class="card-name">Agata</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container2">
+        <img src="background2.png" class="background-image" alt="Tło">
+        
+        <div class="card contact-card">
+            <h2>Chcesz dołączyć do naszego zespołu?</h2>
+            <h3>Skontaktuj się z nami!</h3>
+            <form action="submit_form.php" method="post" enctype="multipart/form-data">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Imię:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="surname">Nazwisko:</label>
+                        <input type="text" id="surname" name="surname" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Numer telefonu:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+        
+                <label for="attachment">Dołącz swoje CV:</label>
+                <input type="file" id="attachment" name="attachment">
+        
+                <button type="submit">Wyślij</button>
+            </form>
+        </div>        
+        <footer>
+            <p1> Zdjęcia: Freepik, Unsplash </p1>
+        </footer>
+</body>
+</html>
